@@ -1,5 +1,5 @@
-# ExampleExtension
-[![license](https://img.shields.io/github/license/Project-Cepi/ExampleExtension?style=for-the-badge&color=b2204c)](../LICENSE)
+# Taskity
+[![license](https://img.shields.io/github/license/Project-Cepi/Taskity?style=for-the-badge&color=b2204c)](../LICENSE)
 [![wiki](https://img.shields.io/badge/documentation-wiki-74aad6?style=for-the-badge)](https://project-cepi.github.io/)
 [![discord-banner](https://img.shields.io/discord/706185253441634317?label=discord&style=for-the-badge&color=7289da)](https://discord.cepi.world/8K8WMGV)
 
@@ -17,7 +17,7 @@ Drop it into the `/extensions` folder.
 Create a folder, then
 Clone the repository using:
 
-`git clone https://github.com/Project-Cepi/ExampleExtension.git`
+`git clone https://github.com/Project-Cepi/Taskity.git`
 
 Once it is cloned, make sure you have gradle installed, and run
 

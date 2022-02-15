@@ -40,6 +40,15 @@ dependencies {
     // Compile Minestom into project
     compileOnly("com.github.Minestom:Minestom:4a976a3333")
 
+    // Add KStom
+    compileOnly("com.github.Project-Cepi:KStom:9aa94ba982")
+
+    // Add Kepi
+    compileOnly("com.github.Project-Cepi:Kepi:bcccd1e9b0")
+
+    // Add canvas
+    implementation("com.github.Project-Cepi:canvas:d3d937c54d")
+
     // import kotlinx serialization
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
 }
