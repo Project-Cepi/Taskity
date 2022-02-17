@@ -20,6 +20,8 @@ object TaskityCommand : Kommand({
         Taskity.categories.none { it.name == name }
     }
 
+    val categoryIcon = ArgumentType.ItemStack("categoryIcon")
+
     val existingCategory = ArgumentType.String("existingCategoryName").map { name ->
         return@map Taskity.categories.firstOrNull { it.name == name } ?: throw ArgumentSyntaxException("No category found", name, 1)
     }.suggest { Taskity.categories.map { it.name } }
@@ -35,6 +37,17 @@ object TaskityCommand : Kommand({
     syntax(category, add, newCategoryName) {
 
         Taskity.categories.add(Category(!newCategoryName))
+
+        sender.sendFormattedTranslatableMessage(
+            "task", "category.add",
+            Component.text(!newCategoryName, NamedTextColor.BLUE)
+        )
+
+    }
+
+    syntax(category, add, newCategoryName, categoryIcon) {
+
+        Taskity.categories.add(Category(!newCategoryName, (!categoryIcon).material))
 
         sender.sendFormattedTranslatableMessage(
             "task", "category.add",
