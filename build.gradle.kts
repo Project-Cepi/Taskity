@@ -50,7 +50,7 @@ dependencies {
     implementation("com.github.Project-Cepi:canvas:d3d937c54d")
 
     // import kotlinx serialization
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 }
 
 configurations {
